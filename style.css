@@ -1,3 +1,4 @@
+/*video*/
 .video_container {
     background: no-repeat url(/assets/images/unsplash_dvACrXUExLs.png);
     height: 594px;
@@ -13,46 +14,81 @@
     height: auto;
 }
 
-.team-container {
-    border: 1px solid red;
-    height: 751px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: 200px 200px 200px 200px;
-    grid-column-gap: 5%;
-    grid-row-gap: 20px;
-    grid-template-areas:
-        "t-title t-title t-title t-title"
-        "t-ph t-ph t-ph t-ph"
-        "n-tn n-tn n-tn n-tn";
+/*Team*/
+.team {
+    position: relative;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    border: 4px solid red;
+}
 
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    height: 510px;
+
+}
+
+.backg_right {
+    width: 30%;
+    position: absolute;
+    right: 0;
+    bottom: 7%;
+}
+
+.backg_left {
+    width: 30%;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 10%;
 }
 
 .team-title {
-    margin: 0;
-    grid-area: t-title;
+    font-weight: 700, bold;
+    font-size: 36px;
+    line-height: 130%;
     text-align: center;
+    align-self: center;
+    margin: 2%;
 }
-
 
 .t_photo__img {
-    grid-area: t-ph;
-    border-top-right-radius: 9px;
-    border-top-left-radius: 9px;
+    height: 90%;
+    width: auto;
+
 }
 
-.n_team1 .n_team2 .n_team3 .n_team4 {
-    grid-area: n-tn;
+/*Services*/
+
+.Services {
+    padding: 50px 0;
+    background-image: url(/assets/images/фон.png);
 }
 
-.team_photo1 .team_photo2 .team_photo3 .team_photo4 {
-    grid-area: t-ph;
+.s-title {
+    font-weight: 700, bold;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    align-self: center;
+    margin: 2%;
 }
 
-.name_team {
-    font-weight: 600;
-    font-size: 24px;
-    text-decoration: none;
-    color: #037e8c;
-}
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    height: 523px;
+
+    .services-item {
+        border-radius: 9px;
+    }
+
+    .s_text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: left;
+        align-self: center;
+        margin: 2%;
+    }
